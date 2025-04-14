@@ -10,7 +10,7 @@ import joblib
 
 # Load environment variables
 from openai import OpenAI
-api_key = st.secrets['OPENAI_API']
+api_key = st.secrets['OPENAI_API_KEY']
 client = OpenAI(api_key=api_key)
 
 # Load tokenizer and models
@@ -120,7 +120,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Add title with customized color
-st.title("Customer Review Classifier and Analyzer 77")
+st.title("Customer Review Classifier and Analyzer ")
 st.write("Enter a product review, and the application will classify it, cluster it, and analyze it using OpenAI GPT. 😊")
 
 user_review = st.text_area("Enter the product review:")
