@@ -81,3 +81,6 @@ The results will be printed in the console, showing the blog-style summaries for
 This project was designed to provide insights into how to process customer review data using classification models, product clustering techniques, and text summarization models. We covered every step of the pipeline from data cleaning, model training, evaluation, to generating product summaries using generative models like GPT-3.5.
 
 If you'd like to modify or improve the project, feel free to interact with the data and models according to your specific use case.
+
+🔗 This is my project for analyzing and classifying product reviews using AI. Feel free to try it out and share it with your friends!
+   https://project-3-nlp-business-case-automated-customers-reviews-as3gwa.streamlit.app/
