@@ -82,5 +82,5 @@ This project was designed to provide insights into how to process customer revie
 
 If you'd like to modify or improve the project, feel free to interact with the data and models according to your specific use case.
 
-🔗 This is my project for analyzing and classifying product reviews using AI. Feel free to try it out and share it with your friends!
-   https://project-3-nlp-business-case-automated-customers-reviews-as3gwa.streamlit.app/
+🔗(  https://project-3-nlp-business-case-automated-customers-reviews-as3gwa.streamlit.app/ ) This is my project for analyzing and classifying product reviews using AI. Feel free to try it out and share it with your friends!
+  
