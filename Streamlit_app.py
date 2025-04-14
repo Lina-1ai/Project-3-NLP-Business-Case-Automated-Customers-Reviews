@@ -12,6 +12,8 @@ import joblib
 from openai import OpenAI
 api_key = st.secrets['OPENAI_API_KEY']
 client = OpenAI(api_key=api_key)
+hf_token = st.secrets['HF_TOKEN']
+os.environ['HF_TOKEN'] = hf_token
 
 # Load tokenizer and models
 try:
