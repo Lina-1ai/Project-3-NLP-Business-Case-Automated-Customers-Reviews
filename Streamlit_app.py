@@ -9,13 +9,9 @@ import numpy as np
 import joblib
 
 # Load environment variables
-_ = load_dotenv(find_dotenv())  # read local .env file
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-
-# Set up the OpenAI 
-import openai
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+from openai import OpenAI
+api_key = st.secrets['OPENAI_API']
+client = OpenAI(api_key=api_key)
 
 # Load tokenizer and models
 try:
@@ -80,7 +76,7 @@ def get_cluster(review_text):
 # --- OpenAI Analysis Function ---
 def analyze_with_openai(review_text):
     try:
-        response = openai.chat.completions.create(
+        response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that generates product category analysis."},
